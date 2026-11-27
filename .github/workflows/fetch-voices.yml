@@ -15,10 +15,11 @@ jobs:
           sparse-checkout: .github
       - run: |
           mkdir -p voces
-          curl -fsSL -o voces/vo_moto.mp3 'https://elevenlabsusercontent.com/database/workspace/0cd299de1a284bdc9eef2184a266d132/content_generation/DwpzZN22TUwgEY9cxcSU/N91YxZAW62HbxJaZz0ZC/content.mp3?Expires=1795766400&KeyName=assets-cdn-key-1&Signature=6iBn2N68z7BTdwEhA8VNK57Pq_U='
+          curl -fsSL -o voces/sfx_moto_flyby.mp3 'https://elevenlabsusercontent.com/database/workspace/0cd299de1a284bdc9eef2184a266d132/content_generation/XQnumCgWHbWlIq1MBflr/kq5Vm0LBxKTVRm40TTtP/content.mp3?Expires=1795766400&KeyName=assets-cdn-key-1&Signature=9M4oj4dtYGwQfD0S6QK6aUh306M='
+          curl -fsSL -o voces/sfx_moto_brake.mp3 'https://elevenlabsusercontent.com/database/workspace/0cd299de1a284bdc9eef2184a266d132/content_generation/5GiNmhjO7admMqeLu0Mh/Ru7iu1zq1Oy4n8WxgJ9Y/content.mp3?Expires=1795766400&KeyName=assets-cdn-key-1&Signature=HlzGdcw4iz3JWhbWHcvDkDNthKY='
           ls -l voces
           git config user.name github-actions
           git config user.email github-actions@users.noreply.github.com
           git add --sparse voces
-          git commit -m "Voz moto"
+          git commit -m "Efectos moto"
           git push
